@@ -44,7 +44,6 @@ public class ChiTietMonAn extends AppCompatActivity {
 
         getIntentExtra();
         setVariable();
-
         // add data favorite Food
         favoriteFood();
     }
@@ -79,7 +78,7 @@ public class ChiTietMonAn extends AppCompatActivity {
                     binding.favBtn.setImageResource(R.drawable.favorite_select);
                     Toast.makeText(ChiTietMonAn.this, "Đã thêm " + object.getTitle() + " vào danh sách yêu thích", Toast.LENGTH_SHORT).show();
                 }).addOnFailureListener(e -> {
-                    // Xử lý lỗi nếu cần
+
                 });
             }
         });
